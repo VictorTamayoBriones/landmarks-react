@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from '../components/Home';
-import { Landmark } from '../components/Landmark';
+import { Home } from '../views/Home';
+import { Landmark } from '../views/Landmark';
 
 export const AppRoutes = () =>{
     return(
