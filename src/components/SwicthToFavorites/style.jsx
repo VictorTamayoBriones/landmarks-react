@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Switch = styled.div`
-    width: 90%;
-    margin: auto;
+    width: max-content;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 10px;
     /* The switch - the box around the slider */
     .switch {
@@ -68,5 +66,9 @@ export const Switch = styled.div`
 
     .slider.round:before {
       border-radius: 50%;
+    }
+
+    @media(max-width: 550px){
+      flex-direction: row-reverse;
     }
 `;

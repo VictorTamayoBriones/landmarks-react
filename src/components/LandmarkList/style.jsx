@@ -7,7 +7,9 @@ export const List = styled.div`
     overflow: scroll;
     position: relative;
     h2{
-        position: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 `;
 
