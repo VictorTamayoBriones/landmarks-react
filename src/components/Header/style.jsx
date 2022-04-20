@@ -10,7 +10,7 @@ export const HeaderApp = styled.div`
     gap: 20px;
 
     .arrow{
-        display: none;
+        display: ${ (props) => props.detail ? 'block' : 'none'};
     }
 
     .text{
