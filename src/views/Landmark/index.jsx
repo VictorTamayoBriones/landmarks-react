@@ -14,6 +14,16 @@ export const Landmark = () =>{
                 <DetailLandmark key={ result.id } >
                     <div className="hero">
                         <img src={ loadImage(result.imageName) } alt="" />
+                        <div className="text">
+                            <h2>{ result.name }</h2>
+                            <p>{ result.park }</p>
+                            <p>{ result.city }</p>
+                            <p>{ result.state }</p>
+                        </div>
+                    </div>
+                    <div className="about">
+                        <h3>About { result.name }</h3>
+                        <p>{ result.description }</p>
                     </div>
                 </DetailLandmark>
             )

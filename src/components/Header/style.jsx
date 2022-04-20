@@ -8,12 +8,17 @@ export const HeaderApp = styled.div`
     align-items: center;
     position: relative;
     gap: 20px;
+    z-index: 1;
 
     .arrow{
         display: ${ (props) => props.detail ? 'block' : 'none'};
+        position: absolute;
+        top: 15px;
+        left: 5px;
     }
 
     .text{
+        display: ${ (props) => props.detail ? 'none' : 'block'};
         letter-spacing: .5px;
         p{
             font-weight: 100;
@@ -31,7 +36,8 @@ export const HeaderApp = styled.div`
         background: #0c3aa4;
         border-radius: 50%;
         position: absolute;
-        right: 0;
+        right: ${ (props) => props.detail ? '5px' : 0};
+        top: ${ (props) => props.detail ? '15px' : 'auto'};
         img{
             width: 100%;
         }
