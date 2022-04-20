@@ -15,6 +15,7 @@ export const HeaderApp = styled.div`
         position: absolute;
         top: 15px;
         left: 5px;
+        cursor: pointer;
     }
 
     .text{

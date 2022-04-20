@@ -28,7 +28,16 @@ export const DetailLandmark = styled.div`
             border-radius: 0px 0px 5px 5px;
             color: #fff;
             line-height: 30px;
-        }    
+        }
+        .favorite{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            cursor: pointer;
+            filter: ${(props)=>props.favorite ? '' : 'brightness(0) invert(100%)'}
+        }
     }
     .about{
         margin: 20px 0px;
