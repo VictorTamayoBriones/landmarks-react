@@ -1,5 +1,10 @@
+import { LandmarkList } from "../../components/LandmarkList"
+
 export const Home = () =>{
     return(
-        <h2>Home of landmarks</h2>
+        <>
+            <LandmarkList title="Favorites" />
+            <LandmarkList/>
+        </>
     )
 }

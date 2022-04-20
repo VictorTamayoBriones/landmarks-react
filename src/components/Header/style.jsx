@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 export const HeaderApp = styled.div`
-    width: 100%;
-    padding: 20px 10px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     position: relative;
     gap: 20px;
+
+    .arrow{
+        display: none;
+    }
 
     .text{
         letter-spacing: .5px;
@@ -26,7 +31,7 @@ export const HeaderApp = styled.div`
         background: #0c3aa4;
         border-radius: 50%;
         position: absolute;
-        right: 10px;
+        right: 0;
         img{
             width: 100%;
         }
